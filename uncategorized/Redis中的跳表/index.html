@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Archives | 心亦有所觉</title>
+  <title>Redis中的跳表 | 心亦有所觉</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -170,135 +170,106 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>你这么努力，不负自己所望。</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p></p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/uncategorized/SpringCloud/">SpringCloud</a></h4>
-                            
-                            <p><time datetime="2019-10-04T23:26:00.000Z"><a href="/uncategorized/SpringCloud/">2019-10-05</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/uncategorized/散列表/">散列表</a></h4>
-                            
-                            <p><time datetime="2019-09-29T00:44:55.000Z"><a href="/uncategorized/散列表/">2019-09-29</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/uncategorized/React-Redux/">React+Redux</a></h4>
-                            
-                            <p><time datetime="2019-09-27T08:50:20.000Z"><a href="/uncategorized/React-Redux/">2019-09-27</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/uncategorized/Redis中的跳表/">Redis中的跳表</a></h4>
-                            
-                            <p><time datetime="2019-09-27T01:11:39.000Z"><a href="/uncategorized/Redis中的跳表/">2019-09-27</a></time></p>
-                        </div>
-                    
-                        
-                            </div><div class="row boxes">
-                            
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/uncategorized/React/">React</a></h4>
-                            
-                            <p><time datetime="2019-09-25T06:09:44.000Z"><a href="/uncategorized/React/">2019-09-25</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/uncategorized/ES6语法/">ES6语法</a></h4>
-                            
-                            <p><time datetime="2019-09-23T02:56:35.000Z"><a href="/uncategorized/ES6语法/">2019-09-23</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/uncategorized/新的开始/">新的开始</a></h4>
-                            
-                            <p><time datetime="2019-09-22T01:10:49.000Z"><a href="/uncategorized/新的开始/">2019-09-22</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/uncategorized/数据结构之链表/">数据结构之链表</a></h4>
-                            
-                            <p><time datetime="2019-09-04T11:56:46.000Z"><a href="/uncategorized/数据结构之链表/">2019-09-04</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2019-09-27T01:11:39.000Z" itemprop="datePublished">
+          2019-09-27
+      </time>
+    
+    
+    | 
+    <a href='/tags/后端/'>后端</a>
+    
+    
+</span>
+                <h1>Redis中的跳表</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<h3 id="1，什么是跳表？"><a href="#1，什么是跳表？" class="headerlink" title="1，什么是跳表？"></a>1，什么是跳表？</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">跳表：链表加多级索引的结构，就是跳表</span><br></pre></td></tr></table></figure>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>做一个温柔的技术宅。</p>
+<img src="https://static001.geekbang.org/resource/image/e1/6d/e18303fcedc068e5a168de04df956f6d.jpg" alt="img">
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>，若我们需要查找链表中值为<span class="number">16</span>的结点，我们需要从头到尾挨个遍历链表，遍历结点个数为<span class="number">10</span>；</span><br><span class="line"><span class="number">2</span>，现对链表进行如下处理，对链表建立一级索引每两个结点提取一个结点到上一级，我们把抽出来的那一级叫作索引或索引层，down表示down指针，表示下一级结点。</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://static001.geekbang.org/resource/image/14/8e/14753c824a5ee4a976ea799727adc78e.jpg" alt="img"></p>
+<h3 id="2，时间复杂度"><a href="#2，时间复杂度" class="headerlink" title="2，时间复杂度"></a>2，时间复杂度</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    <a class="pull-left" href="/uncategorized/React-Redux/" style="float: left;">
+        ← React+Redux
+    </a>
+    
+    
+    <a class="pull-right" href="/uncategorized/React/">
+        React →
+    </a>
+    
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 

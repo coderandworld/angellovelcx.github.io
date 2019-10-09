@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Archives | 心亦有所觉</title>
+  <title>React+Redux | 心亦有所觉</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -170,135 +170,103 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>你这么努力，不负自己所望。</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p></p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/uncategorized/SpringCloud/">SpringCloud</a></h4>
-                            
-                            <p><time datetime="2019-10-04T23:26:00.000Z"><a href="/uncategorized/SpringCloud/">2019-10-05</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/uncategorized/散列表/">散列表</a></h4>
-                            
-                            <p><time datetime="2019-09-29T00:44:55.000Z"><a href="/uncategorized/散列表/">2019-09-29</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/uncategorized/React-Redux/">React+Redux</a></h4>
-                            
-                            <p><time datetime="2019-09-27T08:50:20.000Z"><a href="/uncategorized/React-Redux/">2019-09-27</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/uncategorized/Redis中的跳表/">Redis中的跳表</a></h4>
-                            
-                            <p><time datetime="2019-09-27T01:11:39.000Z"><a href="/uncategorized/Redis中的跳表/">2019-09-27</a></time></p>
-                        </div>
-                    
-                        
-                            </div><div class="row boxes">
-                            
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/uncategorized/React/">React</a></h4>
-                            
-                            <p><time datetime="2019-09-25T06:09:44.000Z"><a href="/uncategorized/React/">2019-09-25</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/uncategorized/ES6语法/">ES6语法</a></h4>
-                            
-                            <p><time datetime="2019-09-23T02:56:35.000Z"><a href="/uncategorized/ES6语法/">2019-09-23</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/uncategorized/新的开始/">新的开始</a></h4>
-                            
-                            <p><time datetime="2019-09-22T01:10:49.000Z"><a href="/uncategorized/新的开始/">2019-09-22</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/uncategorized/数据结构之链表/">数据结构之链表</a></h4>
-                            
-                            <p><time datetime="2019-09-04T11:56:46.000Z"><a href="/uncategorized/数据结构之链表/">2019-09-04</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2019-09-27T08:50:20.000Z" itemprop="datePublished">
+          2019-09-27
+      </time>
+    
+    
+    | 
+    <a href='/tags/前端/'>前端</a>
+    
+    
+</span>
+                <h1>React+Redux</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<h3 id="1，MVC和MVVM"><a href="#1，MVC和MVVM" class="headerlink" title="1，MVC和MVVM"></a>1，MVC和MVVM</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>，MVC:MVC是一种架构模式（风格）。</span><br><span class="line"><span class="number">2</span>，MVVM：Model-View-ViewModel,本质上是MVC的改进版。其设计思想是关注Model的变化，让MVVM框架去自动更新DOM。</span><br></pre></td></tr></table></figure>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>做一个温柔的技术宅。</p>
+<h3 id="2，Flux"><a href="#2，Flux" class="headerlink" title="2，Flux"></a>2，Flux</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">核心思想：利用单向数据流和逻辑单向流应对MVC架构中出现状态混乱的问题。</span><br><span class="line">运作方式：Action -&gt; Dispatcher -&gt; Store -&gt; View</span><br></pre></td></tr></table></figure>
+
+<h3 id="3，Redux"><a href="#3，Redux" class="headerlink" title="3，Redux"></a>3，Redux</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">Redux仅仅是为了状态管理。</span><br><span class="line">适用场景：多交互，多数据源。</span><br><span class="line">三大特性：</span><br><span class="line"><span class="number">1</span>，单一数据源：</span><br><span class="line">	整个应用的state都存储在一个JavaScript对象--Store中，可以将Store理解成全局的一个变量，且全局只有一个Store。</span><br><span class="line"><span class="number">2</span>，state是只读的</span><br><span class="line">	改变state的唯一方法就是触发Action，Action是一个普通的JavaScript对象，用于描述将要发生的事件。这样可以确保视图层和网络请求都无法直接修改状态，相反，仅仅是表达想要修改的意图。Store中有一个dispatch,dispatch接收Action参数，然后通过Store.dispatch(Action)来改变Store中的state。</span><br><span class="line">    store.dispatch(&#123;</span><br><span class="line">        type: types.RECEIVE_PRODUCTS,   <span class="comment">//Action名称</span></span><br><span class="line">        products						<span class="comment">//products 表示该Action携带的状态，最后将存储在Store</span></span><br><span class="line">    &#125;)</span><br><span class="line"><span class="number">3</span>，使用纯函数进行修改</span><br><span class="line">纯函数：一个函数的返回结果只依赖于它的参数，相同的输入，永远会得到相同的输出，而且没有任何可观察的副作用。</span><br><span class="line">这里的纯函数指的是Reducer，其作用是为了描述Action如何改变状态树。Reducer接收之前的state和Action，并返回新的state。</span><br><span class="line"></span><br><span class="line">Redux的组成：</span><br><span class="line">三部分：Action，Reducer,Store。</span><br><span class="line">Action用来表达动作，Reducer根据Action来更新State。Redux的设计思想是将应用看作是一个状态机，视图和状态时一一对应的，所有的状态都存在Store这个对象内。用户通过触发View的Action去改变Store中的状态，而View的状态来源于Store，一个state对应是一个View，也就是“状态驱动视图变化”。</span><br></pre></td></tr></table></figure>
+
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    <a class="pull-left" href="/uncategorized/散列表/" style="float: left;">
+        ← 散列表
+    </a>
+    
+    
+    <a class="pull-right" href="/uncategorized/Redis中的跳表/">
+        Redis中的跳表 →
+    </a>
+    
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
